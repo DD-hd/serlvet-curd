@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app PUBLIC
+        '-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN'
+        'http://java.sun.com/j2ee/dtds/web-app_2_3.dtd'>
+
+<web-app>
+    <context-param>
+        <param-name>emailOfwebmaster</param-name>
+        <param-value>webmaster@hotmail.com</param-value>
+    </context-param>
+    <!--
+       <listener>
+         <listener-class>mypack.MyServletContextListener</listener-class>
+       </listener>
+    -->
+
+
+    <servlet>
+        <servlet-name>counter1</servlet-name>
+        <servlet-class>IndexSerlvert</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>counter1</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+</web-app>
